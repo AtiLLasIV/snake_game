@@ -14,7 +14,6 @@ class Level:
     def make_level(self, level_counter, max_scores):
         self.blocks.clear()
         # при достижении определенного рекорда за уровень, в этом уровне будет новый цвет змейки
-        # (возможно потом сделать новый цвет уникальным для каждого уровня)
         if max_scores[level_counter] >= 500:
             self.snake_color = (153, 38, 103)
         else:
